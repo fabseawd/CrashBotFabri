@@ -6,8 +6,8 @@ from threading import Lock
 import time
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "TOKEN AQUI"
-ADMIN_ID = 7178876305
+BOT_TOKEN = "8027723762:AAEoa3h3l0zIBcTDBmWA-G3NIAc74zQshb4"
+ADMIN_ID = 7799638812
 START_PY_PATH = "/workspaces/MHDDoS/start.py"
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -44,7 +44,7 @@ def handle_start(message):
     if result:
         expiration_date = datetime.strptime(result[0], "%Y-%m-%d %H:%M:%S")
         if datetime.now() > expiration_date:
-            vip_status = "❌ *Seu plano VIP expirou.*"
+            vip_status = "❌ *Tu plan VIP ha caducado.*"
         else:
             dias_restantes = (expiration_date - datetime.now()).days
             vip_status = (
@@ -79,7 +79,7 @@ def handle_start(message):
             """
 ```
 /crash UDP 143.92.125.230:10013 10 900```\n"""
-            "💠 KrizzZModz 🇵🇪 USERS VIP 💠"
+            "💠 CRASH BOT - FABRI VIP 💠"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
@@ -178,7 +178,7 @@ def handle_ping(message):
             f"⚙️ *Tipo:* {attack_type}\n"
             f"🧟‍♀️ *Threads:* {threads}\n"
             f"⏳ *Tiempo (ms):* {duration}\n\n"
-            f"💠 KrizzZModz 🇵🇪 USERS VIP 💠"
+            f"💠 CRASH BOT - FABRI VIP 💠"
         ),
         reply_markup=markup,
         parse_mode="Markdown",
